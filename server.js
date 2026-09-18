@@ -1,6 +1,7 @@
 import express from "express";
 
 const app = express();
+app.set("view engine", "ejs");
 const PORT = 3000;
 
 const projects = [
@@ -35,6 +36,9 @@ app.get('/projects', (req, res) => {
   res.send(filteredProjects);
 });
 
+app.get("/about", (req, res) => {
+  res.render("about", { title: "About" });
+});
 
 app.listen(PORT, () => {
   console.log(`Listening on http://localhost:${PORT}`);
