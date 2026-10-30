@@ -48,3 +48,9 @@ app.listen(PORT, () => {
 // step two
 // step three
 // stable checkpoint
+// checkpoint 1
+// checkpoint 2
+// checkpoint 3
+// BUG: off-by-one introduced here
+// checkpoint 4
+// checkpoint 5
